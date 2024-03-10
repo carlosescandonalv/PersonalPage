@@ -1,4 +1,79 @@
-h1 {
-color: orange;
-text-align: center;
-}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  nav ul li a:hover {
+    background-color: #555;
+  }
+  
+  header {
+    background-color: #f4f4f4;
+    padding: 20px 0;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icons {
+    display: flex;
+    flex-direction: line;
+    position: relative;
+    top: 20px;
+    left: 10px;
+  }
+  
+  .icons a {
+    margin-bottom: 10px;
+  }
+  
+  .profile img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .description {
+    margin-left: 20px;
+  }
+  
+  .description h1 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .description p {
+    color: #666;
+  }
+  
