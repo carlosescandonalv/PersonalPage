@@ -1,79 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display&family=Molengo&family=Questrial&family=Yanone+Kaffeesatz:wght@400;600&display=swap');
+
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
+  font-family: 'Molengo', sans-serif;
+  margin: 0;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+nav {
+  background-color: white;
+ 
+}
+
+nav ul {
+  list-style-type: none;
+  font-size: 1.5rem;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  text-align:center;
+}
+
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color:black;
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
   
-  nav {
-    background-color: #333;
-    color: #fff;
   }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+
+nav ul li a:hover {
+  background-color: #f1b993;
+  text-decoration: underline;
+  text-underline-offset: 1.5rem;
+  text-decoration-color: (181,181,181);
+}
+
+header {
+  background-color: #f4f4f4;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 5 ;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.socials {
+  position:absolute;
+  top: 5vi;
+  left:7vi;
+  display:flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.icon{
+  height:3rem;
+}
+
+.icons a {
+  margin-right: 10px; 
+ 
+}
+
+.pic_container {
+  float:left;
+  height:300px;
+  width:40%;
+  margin: auto 0;
+  top:100px;
+ 
+}
+
+.profile_img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.description {
+  float:left;
+  top: 8vi;
+  width: 50%;
+}
+
+.description h1 {
+  margin-top: -20px;
+  margin-bottom: 5px;
+  margin-left: 100px;
+  font-size: 40px;
+}
+
+.description p {
+  color: #666;
+}
+
+
+@media screen and (max-width:600px){
+  aside,section,article{
+    width: 100%;
   }
-  
-  nav ul li {
-    display: inline;
-  }
-  
-  nav ul li a {
-    display: inline-block;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: #fff;
-  }
-  
-  nav ul li a:hover {
-    background-color: #555;
-  }
-  
-  header {
-    background-color: #f4f4f4;
-    padding: 20px 0;
-  }
-  
-  .container {
-    width: 80%;
-    margin: 0 auto;
-  }
-  
-  .profile {
-    display: flex;
-    align-items: center;
-  }
-  
-  .icons {
-    display: flex;
-    flex-direction: line;
-    position: relative;
-    top: 20px;
-    left: 10px;
-  }
-  
-  .icons a {
-    margin-bottom: 10px;
-  }
-  
-  .profile img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-  }
-  
-  .description {
-    margin-left: 20px;
-  }
-  
-  .description h1 {
-    margin-top: 10px;
-    margin-bottom: 5px;
-  }
-  
-  .description p {
-    color: #666;
-  }
-  
+}
