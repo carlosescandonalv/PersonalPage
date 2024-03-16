@@ -131,7 +131,7 @@ header {
   float:left;
   flex-direction: column;
   width: 45%; /* Each prof_position occupies 33% width */
-  margin-right: 30px; /* Add space between each prof_position */
+  margin-right: 35px; /* Add space between each prof_position */
   margin-bottom: 20px; /* Add space between rows */
 }
 
