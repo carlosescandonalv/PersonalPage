@@ -5,21 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="java"></script>
+
 </head>
 <body>
  <!-- Barra de navegación -->
     <nav>
         <ul>
-          <li><a href="#inicio">Me</a></li>
-          <li><a href="#portfolio">Skills</a></li>
-          <li><a href="#experiencia">Experience</a></li>
-          <li><a href="#educacion">Education</a></li>
-          <li><a href="#proyectos">Projects</a></li>
+          <li><a href="#me">Me</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
         </ul>
       </nav>
  <!-- Foto nombre y descripción -->
       <header>
-        <div class="container">
+        <div class="container" id="me">
             <div class="profile">
               <div class="socials">
                 <a href="https://www.linkedin.com/in/carlosescandonalv"><img src="imagenes/Linkedin.png" alt="LinkedIn" class="icon"></a>
@@ -50,32 +53,49 @@
         </header>
 
       <main>
-        <div class="experience"> 
+        <div class="experience" id="experience"> 
           <h1>Experience</h1>
-          <div class="prof_position">
-            <div class="project">
-              <img src="imagenes/ericsson logo.png" alt="Project Image">
-              <div class="project-details">
-                <h2>Master Thesis Student</h2>
-                <h3>Ericsson</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, porro doloribus maxime magnam molestias repellendus aut incidunt, assumenda similique vero laudantium consequuntur voluptatem cumque dicta quam magni eveniet nihil voluptas?
-                </p>
-              </div>
+          <div class="position_container">
+            <!-- left arrow -->
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <div class = "prof_positions">
+                <div class="position">
+                    <img src="imagenes/ericsson logo.png" alt="Project Image">
+                    <div class="project-details">
+                      <h2>Master Thesis Student</h2>
+                      <h3>Ericsson</h3>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, porro doloribus maxime magnam molestias repellendus aut incidunt, assumenda similique vero laudantium consequuntur voluptatem cumque dicta quam magni eveniet nihil voluptas?
+                      </p>
+                    </div>
+                </div>
+                <div class="position">
+                    <img src="imagenes/zelenza_logo.png" alt="Project Image">
+                    <div class="project-details">
+                      <h2>Data Team member</h2>
+                      <h3>Zelenza</h3>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, porro doloribus maxime magnam molestias repellendus aut incidunt, assumenda similique vero laudantium consequuntur voluptatem cumque dicta quam magni eveniet nihil voluptas?
+                      </p>
+                    </div>
+                </div>
+                <div class="position">
+                    <img src="imagenes/zelenza_logo.png" alt="Project Image">
+                    <div class="project-details">
+                      <h2>Data Team member</h2>
+                      <h3>Zelenza</h3>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, porro doloribus maxime magnam molestias repellendus aut incidunt, assumenda similique vero laudantium consequuntur voluptatem cumque dicta quam magni eveniet nihil voluptas?
+                      </p>
+                    </div>
+                </div>
             </div>
+            <!-- right arrow -->
+
+            <i id="right" class="fa-solid fa-angle-right"></i>
           </div>
-          <div class="prof_position">
-            <div class="project">
-              <img src="imagenes/zelenza_logo.png" alt="Project Image">
-              <div class="project-details">
-                <h2>Data Team member</h2>
-                <h3>Zelenza</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, porro doloribus maxime magnam molestias repellendus aut incidunt, assumenda similique vero laudantium consequuntur voluptatem cumque dicta quam magni eveniet nihil voluptas?
-                </p>
-              </div>
-            </div>
-          </div>
+          
+           
         </div>
-      <div class="skills">
+
+        <div class="skills" id="skills">
           <h1>Skills</h1>
           <div class="skills-container">
             <div class="skill">
@@ -122,8 +142,12 @@
               <img src="imagenes/skills_logo/powerbi.png" alt="Powerbi">
               <span class="skill-name">Power BI</span>
             </div>
+            <div class="skill">
+              <img src="imagenes/skills_logo/git.png" alt="Git">
+              <span class="skill-name">Git</span>
+            </div>
 
-      </div>
+        </div>
       
       </main>
       <footer>
