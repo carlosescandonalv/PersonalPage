@@ -173,6 +173,7 @@ header {
 .position:hover {
   transform: scale(1.1);
   z-index: 2;
+  padding:30px;
 }
 
 
