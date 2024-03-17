@@ -171,9 +171,8 @@ header {
 }
 
 .position:hover {
-  transform: scale(1.1);
+  background-color:#9DC9FB;
   z-index: 2;
-  padding:30px;
 }
 
 
@@ -238,15 +237,15 @@ header {
 }
 
 .skill {
-  display: inline-block;
-  align-items: center;
+  display: flex;
   margin-right: 40px; /* Adjust as needed */
   margin-bottom: 10px; /* Adjust as needed */
+  align-items: center;
 }
 
 .skill img {
-  width: 50px; /* Adjust image size as needed */
-  height: 50px; /* Adjust image size as needed */
+  width: 40px; /* Adjust image size as needed */
+  height: 40px; /* Adjust image size as needed */
   margin-right: 10px; /* Adjust as needed */
 }
 
