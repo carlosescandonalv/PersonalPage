@@ -53,45 +53,77 @@ header {
 }
 
 .profile {
+  width: 100%;
   display: flex;
   align-items: center;
 }
 
+.profile_container{
+  width:50%;
+  display:flex;
+  float: left;
+  flex-direction: column;
+  margin-top: 4%;
+}
 .socials {
   position:relative;
   display:flex;
   float:top;
   justify-content: center;
   gap: 1rem;
+  padding-bottom: 5px;
 }
 
-.icon{
-  height:2.3rem;
+
+.fa {
+  border-radius: 50%;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 40px;
+  padding:5px;
+}
+.fa.fa-linkedin{
+  color: #0077B5;
+}
+.fa.fa-github{
+  color: black;
+}
+.fa.fa-envelope{
+  color: black;
+}
+.fa.fa-square-twitter{
+  color: #1DA1F2;
 }
 
-.icons a {
-  margin-right: 10px; 
- 
+.fa:hover{
+  background-color: #9DC9FB;
+  color: hsl(0, 0%, 10%); 
+}
+
+
+.socials a {
+  margin-right: 2px; 
 }
 
 .pic_container {
   float:left;
-  height:300px;
-  width:40%;
-  top:100px;
- 
+  margin-left: 120px; /* Adjust margin for image positioning */
+  margin-right: 100px;
+  position:relative;
+
 }
 
-.profile_img {
-  border-radius: 50%;
-  object-fit: cover;
+.pic_container img {
+  height: 450px;
+  width:auto;
+  object-fit: cover; 
 }
 
 .description {
   float: left;
-  top: 8vi;
-  left:5vi;
-  margin-left: -10%;
+  top:  8vi;
+  left: 5vi;
+  margin-left: 0;
   margin-top: 5%;
   width: 50%;
 }
@@ -227,13 +259,14 @@ header {
 /*Skills Section */
 .skills div{
   margin-top: 1%;
- 
 }
 
 .skills-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  padding-bottom: 3%;
+
 }
 
 .skill {
