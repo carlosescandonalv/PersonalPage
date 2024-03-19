@@ -33,7 +33,7 @@ nav ul li a {
   display: inline-block;
   padding: 0px 20px;
   text-decoration: none;
-  transition: all 0.5s ease-out 2s;
+  transition: all 0.2s ease-out;
   scroll-behavior:smooth;
 }
  
@@ -384,7 +384,7 @@ header {
 
 .abroad_exp{
   width:42%;
-  background-color:#9DC9FB;
+  background-color:white;
   align-items: center; 
   border-radius: 10px; 
   padding: 10px; 
@@ -433,8 +433,11 @@ header {
   padding-right: 20px;
 }
 
-.project-details{
+.proj_details{
+  width:60%;
   position:relative;
+  display:flex;
+  flex-direction: column;
 }
 
 .project img{
@@ -444,23 +447,23 @@ header {
 }
 
 .bottom_div{
+  width:100%;
   position: absolute;
-  bottom: 1;
+  bottom: 5%;
   display:flex;
-  width:40%;
   justify-content: space-between;
 }
 
 .read_div .tech_div{
   padding-top:1%;
-  width:30%;
-
 }
 
 .read_div{
- align-items: left;
- margin-right: -20px;
+ 
+ align-items: right;
+ margin-right: 20px;
 }
+
 .read_div span, i{
  color: blue;
  align-items: right;
