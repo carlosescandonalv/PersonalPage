@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display&family=Molengo&family=Questrial&family=Yanone+Kaffeesatz:wght@400;600&display=swap');
 
-
+html{
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Helvetica';
   margin-right:200px;
@@ -31,8 +33,10 @@ nav ul li a {
   display: inline-block;
   padding: 0px 20px;
   text-decoration: none;
-  
-  }
+  transition: all 0.5s ease-out 2s;
+  scroll-behavior:smooth;
+}
+ 
 
 nav ul li a:hover {
   color: blue;
@@ -99,7 +103,6 @@ header {
 }
 
 .fa:hover{
-  
   color: blue;
 }
 
@@ -196,7 +199,7 @@ header {
   display:flex;
   overflow-x: hidden;
   align-items: center;
-  -webkit-overflow-scrolling: touch;
+  
   align-items: center;
 
 }
@@ -409,3 +412,73 @@ header {
   text-align: justify;
   margin: 0;
 }
+
+
+
+
+
+/*Projects Section*/
+
+.project_container{
+  width:100%;
+  display:flex;
+  flex-direction: column;
+}
+
+.project{
+  width:100%;
+  border-radius: 10px; 
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);  
+  display:flex;
+  padding-right: 20px;
+}
+
+.project-details{
+  position:relative;
+}
+
+.project img{
+  width:40%;
+  padding-right: 20px; 
+  border-radius:10px;
+}
+
+.bottom_div{
+  position: absolute;
+  bottom: 1;
+  display:flex;
+  width:40%;
+  justify-content: space-between;
+}
+
+.read_div .tech_div{
+  padding-top:1%;
+  width:30%;
+
+}
+
+.read_div{
+ align-items: left;
+ margin-right: -20px;
+}
+.read_div span, i{
+ color: blue;
+ align-items: right;
+ font-size: 10pt;
+ 
+}
+
+.tech{
+  justify-content: center;
+  color:white;
+  background-color: rgb(88, 87, 87);
+  border-radius: 5px;
+  margin: 5px;
+  padding:5px;
+  padding-top:3px;
+  padding-bottom:3px;
+  font-size: 10pt;
+  margin-bottom: auto;
+}
+
+
