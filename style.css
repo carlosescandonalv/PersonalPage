@@ -9,6 +9,8 @@ body {
   margin-left:200px;
 }
 
+
+
 nav {
   background-color: white;
  
@@ -48,7 +50,7 @@ nav ul li a:hover {
 
 header {
   background-color: white;
-  padding-bottom: 5%;
+  padding-bottom: 5vi;
 }
 
 .container {
@@ -194,16 +196,23 @@ header {
  
 }
 
+.experience h1 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
 .position_container div{
   position: relative;
   display:flex;
   overflow-x: hidden;
   overflow-y: auto;
   align-items: center;
+  
 }
 
 .prof_positions {
-  padding-top: 1% ;
+  padding-top: 0vi;
   padding-left: 30px;
   padding-right:20px;
   display: flex;
@@ -211,7 +220,7 @@ header {
   justify-content: left;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-  
+  padding-bottom: 5vi;
 }
 
 .position {
@@ -304,8 +313,13 @@ header {
 
 /*Skills Section */
 .skills div{
-  margin-top: 1%;
- 
+  margin-top: 1vi;
+}
+
+.skills h1 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  letter-spacing: 3px;
 }
 
 .skills-container {
@@ -322,8 +336,13 @@ header {
   margin-right: 40px; /* Adjust as needed */
   margin-bottom: 10px; /* Adjust as needed */
   align-items: center;
+  padding: 5px;
 }
 
+.skill:hover{
+  box-shadow: 0px 0px 10px 10px #9DC9FB;
+  border-radius: 10px;
+}
 .skill img {
   width: 40px; /* Adjust image size as needed */
   height: 40px; /* Adjust image size as needed */
@@ -339,8 +358,15 @@ header {
 /*Education Section*/
 .education{
   position:relative;
-  margin-top: 1%;
-  padding-bottom: 4%;
+  margin-top: 2vi;
+  padding-bottom: 10vi;
+}
+
+.education h1 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 3vi;
 }
 
 .education_container {
@@ -360,6 +386,10 @@ header {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);  
   display:flex;
   flex-direction: column;
+}
+
+.degree:hover{
+  background-color: #E5F0EE
 }
 
 .degree img {
@@ -406,6 +436,10 @@ header {
   margin-right: 20px;
 }
 
+.abroad_exp:hover{
+  background-color: #E5F0EE
+}
+
 .abroad_exp img {
   display: flex;
   align-items: center;
@@ -432,10 +466,18 @@ header {
 /*Projects Section*/
 
 .project_container{
+  margin-top: 5%;
   width:100%;
   display:flex;
   flex-direction: column;
   padding-bottom: 4%;
+}
+
+.Projects h1 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 2vi;
 }
 
 .project{
@@ -445,7 +487,7 @@ header {
   display:flex;
   padding-right: 20px;
   margin-bottom: 15px;
- 
+  min-height: 10vi;
 }
 
 .proj_details{
@@ -455,6 +497,9 @@ header {
   flex-direction: column;
 }
 
+.proj_details p:last-child{
+  margin-bottom:4vi;
+}
 .project img{
   width:40%;
   padding-right: 20px; 
