@@ -490,6 +490,10 @@ header {
   min-height: 10vi;
 }
 
+.project:hover{
+  background-color: #E5F0EE;
+}
+
 .proj_details{
   width:60%;
   position:relative;
