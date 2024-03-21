@@ -55,13 +55,13 @@ nav ul li a:hover {
 
 header {
   background-color: white;
-  padding-bottom: 5vi;
+  padding-bottom: 2vi;
 }
 
 .container {
   width: 100%;
   margin: 0 ;
-  padding-bottom: 100px;
+  padding-bottom: 0px;
 }
 
 .profile {
@@ -166,13 +166,15 @@ header {
 }
 
 .next{
-  position:absolute;
-  bottom: 30px;
-  left:50%;
+  position:relative;
+  bottom: 10vi;
+  justify-content:  center;
 
 }
 .text-next{
-  text-align: center !important;
+  text-align: center ;
+  padding-left: 50%;
+  padding-top:40%;
 }
 
 .next a {
