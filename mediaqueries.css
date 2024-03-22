@@ -1732,12 +1732,12 @@ footer {
     position: absolute;
     top: 100%;
     overflow: hidden;
-    width: 40%;
-    height: 0.01vi;
+    width: 60%;
+    height: 0.1vi;
     content: '\a0';
     background-color: blue;
     margin-left: 10%;
-    margin-bottom: 3vi;
+    margin-bottom: 2vi;
   }
   .title_lines:before {
     margin-left: 0;
@@ -2391,8 +2391,8 @@ footer {
     position: absolute;
     top: 100%;
     overflow: hidden;
-    width: 40%;
-    height: 0.01vi;
+    width: 60%;
+    height: 0.2vi;
     content: '\a0';
     background-color: blue;
     margin-left: 10%;
