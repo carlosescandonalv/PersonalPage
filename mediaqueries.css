@@ -1,6 +1,204 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display&family=Molengo&family=Questrial&family=Yanone+Kaffeesatz:wght@400;600&display=swap');
 
+@media screen and (min-width:1600px){
+  html{
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Helvetica';
+    margin-right:200px;
+    margin-left:200px;
+    
+  }
+  
+  main{
+    width: 100%;
+  }
+  
+  nav {
+    background-color: white;
+   
+  }
+  
+  nav ul {
+    list-style-type: none;
+    font-size: 1.5rem;
+    gap: 2.4rem;
+    margin: 0;
+    padding: 0;
+    text-align:center;
+  }
+  
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    color:black;
+    display: inline-block;
+    padding: 0px 20px;
+    text-decoration: none;
+    transition: all 0.2s ease-out;
+    scroll-behavior:smooth;
+  }
+   
+  
+  nav ul li a:hover {
+    color: blue;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: (181,181,181);
+  }
+  
+  header {
+    background-color: white;
+    padding-bottom: 2vi;
+  }
+  
+  .container {
+    width: 100%;
 
+    margin: 0 ;
+    padding-bottom: 0px;
+  }
+  
+  .profile {
+    width: 100%;
+    align-items: center;
+  }
+  
+  .profile_container{
+    width:50%;
+    display:flex;
+    float: left;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4%;
+  }
+  .socials {
+    margin-left: 2vi;
+    position:relative;
+    display:flex;
+    float:top;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 1%;
+    width:100%;
+  }
+  
+  
+  .fa {
+    border-radius: 50%;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 40px;
+    padding:7px;
+    color:black
+  }
+  .fa.fa-linkedin{
+    color: black;
+  }
+  .fa.fa-github{
+    color: black;
+  }
+  .fa.fa-envelope{
+    color: black;
+  }
+  .fa.fa-square-twitter{
+    color: black;
+  }
+  
+  .fa:hover{
+    color: blue;
+  }
+  
+  
+  .socials a {
+    margin-right: 2px; 
+  }
+  
+  .pic_container {
+    float:left;
+    margin-left: 120px; /* Adjust margin for image positioning */
+    margin-right: 100px;
+    position:relative;
+  
+  }
+  
+  .pic_container img {
+    height: 450px;
+    width:auto;
+    object-fit: cover; 
+    border-radius: 5px;
+  }
+  
+  .description {
+    width: 50%;
+    float: left;
+    top:  8vi;
+    margin-top: 5%;
+  }
+  
+  .description h1 {
+    width:100%;
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 30pt;
+    font-weight: bold;
+  }
+  
+  .description h2{
+    font-size: 16pt;
+    width:100%;
+    padding-bottom: 1vi;
+    font-weight: bold;
+    color: #666;
+    text-align: left;
+  }
+  .description p {
+    width:100%;
+    text-align: justify;
+    color: #666;
+  }
+  
+  .next{
+    position:relative;
+    bottom: 10vi;
+    justify-content:  center;
+  
+  }
+  .text-next{
+    text-align: center ;
+    padding-left: 50%;
+    padding-top:40%;
+  }
+  
+  .next a {
+    cursor:pointer; 
+    scroll-behavior: smooth;
+    transition: color 4s ease-in-out;
+    color: #38B;
+  }
+  
+  
+  
+  .fa-circle-down{
+    display: block;
+    margin-top: 18%;
+    border-radius: 50%;
+    color:black;
+   
+  }
+  .fa-circle-down:hover{
+    color:blue;
+   
+  }
+  
+
+}
 @media screen and (max-width:1350px){
 html{
   scroll-behavior: smooth;
@@ -250,8 +448,8 @@ header {
 }
 
 .position {
-  width:calc(100%/2.2);
-  height:70%;
+  width:calc(100%/2.1);
+  height:60%;
   flex: 0 0 auto;
   margin-right: 20px;
   background-color:white; /* Shaded background color */
@@ -268,8 +466,8 @@ header {
 }
 
 .position img {
-  width: 150px; 
-  height:150px;
+  width: 100px; 
+  height:100px;
   top: 5%;
   display:flex;
   align-items: center;
@@ -536,7 +734,7 @@ header {
 }
 
 .proj_details p:last-child{
-  margin-bottom:4vi;
+  margin-bottom:6vi;
 }
 .project img{
   width:40%;
@@ -549,6 +747,7 @@ header {
   position: absolute;
   bottom: 5%;
   display:flex;
+  margin-top: 2vi;
   justify-content: space-between;
 }
 
@@ -557,9 +756,7 @@ header {
 }
 
 .read_div{
- 
  align-items: right;
- margin-right: 20px;
  cursor: pointer;
 }
 
@@ -567,7 +764,7 @@ header {
 .read_div span, i{
  color: blue;
  align-items: right;
- font-size: 10pt;
+ font-size: 1vi;
 }
 
 .tech{
@@ -575,11 +772,11 @@ header {
   color:white;
   background-color: rgb(88, 87, 87);
   border-radius: 5px;
-  margin: 5px;
+  margin: 2px;
   padding:5px;
   padding-top:3px;
   padding-bottom:3px;
-  font-size: 10pt;
+  font-size: 8pt;
   margin-bottom: auto;
 }
 
@@ -662,7 +859,7 @@ html{
 body {
   font-family: 'Helvetica';
   margin-right:200px;
-  margin-left:100px;
+  margin-left:200px;
 }
 
 
@@ -674,7 +871,7 @@ nav {
 
 nav ul {
   list-style-type: none;
-  font-size: 1.5rem;
+  font-size: 1rem;
   gap: 2.4rem;
   margin: 0;
   padding: 0;
@@ -729,7 +926,9 @@ header {
   align-items: center;
   margin-top: 4%;
 }
+
 .socials {
+  margin-left: 2vi;
   position:relative;
   display:flex;
   float:top;
@@ -797,6 +996,7 @@ header {
 
 .description h1 {
   width:100%;
+  padding-left: 10%;
   text-align: center;
   margin-bottom: 10px;
   font-size: 30pt;
@@ -806,6 +1006,7 @@ header {
 
 .description h2{
   font-size: 16pt;
+  padding-left: 10%;
   width:100%;
   padding-bottom: 1vi;
   font-weight: bold;
@@ -815,6 +1016,7 @@ header {
 .description p {
   width:100%;
   color: #666;
+  padding-left: 10%;
 }
 
 .next{
@@ -1333,7 +1535,7 @@ footer {
   
   nav ul {
     list-style-type: none;
-    font-size: 1.5rem;
+    font-size: 1rem;
     gap: 2.4rem;
     margin: 0;
     padding: 0;
@@ -1892,10 +2094,10 @@ footer {
     color:white;
     background-color: rgb(88, 87, 87);
     border-radius: 5px;
-    margin: 5px;
+    margin: 4px;
     padding-top:3px;
     padding-bottom:3px;
-    font-size: 10pt;
+    font-size: 8pt;
     margin-bottom: auto;
   }
   
@@ -1994,7 +2196,7 @@ footer {
   
   nav ul {
     list-style-type: none;
-    font-size: 1.5rem;
+    font-size: 1rem;
     gap: 2.4rem;
     margin: 0;
     padding: 0;
@@ -2106,7 +2308,6 @@ footer {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-left: 15%;
     width: 100%;
     display: flex;
    
@@ -2325,10 +2526,10 @@ footer {
   
   .skill {
     display: flex;
-    margin-right: 40px; /* Adjust as needed */
+    margin-right: 20px; /* Adjust as needed */
     margin-bottom: 10px; /* Adjust as needed */
     align-items: center;
-    padding: 5px;
+    padding: 2px;
   }
   
   .skill:hover{
@@ -2336,13 +2537,13 @@ footer {
     border-radius: 10px;
   }
   .skill img {
-    width: 40px; /* Adjust image size as needed */
-    height: 40px; /* Adjust image size as needed */
+    width: 20px; /* Adjust image size as needed */
+    height: 20px; /* Adjust image size as needed */
     margin-right: 10px; /* Adjust as needed */
   }
   
   .skill-name {
-    font-size: 16pt; /* Adjust font size as needed */
+    font-size: 12pt; /* Adjust font size as needed */
     font-weight: bold;
   }
   
@@ -2490,7 +2691,6 @@ footer {
     display:flex;
     flex-direction: column;
     margin-bottom: 25px;
-  
     padding-right: 0px;
   }
   
@@ -2509,6 +2709,7 @@ footer {
     width: 100%;
     width:100%;
     padding-left: 5px;
+    padding-right: 5px;
     position:relative;
     display:flex;
     flex-direction: column;
@@ -2521,12 +2722,13 @@ footer {
     margin-bottom:4vi;
   }
   .project img{
-    width:100%;
+    width:106%;
     border-radius: 10px;
+    position: relative;
   }
   
   .bottom_div{
-    margin-top: 2vi;
+    margin-top: 3vi;
     width:100%;
     position: relative;
     bottom: 3vi;
@@ -2540,9 +2742,7 @@ footer {
   
   .read_div{
    align-items: right;
-   cursor: pointer;
-   
-    
+   cursor: pointer; 
   }
   
   
@@ -2560,7 +2760,7 @@ footer {
     margin: 5px;
     padding-top:3px;
     padding-bottom:3px;
-    font-size: 10pt;
+    font-size: 8pt;
     margin-bottom: auto;
   }
   
