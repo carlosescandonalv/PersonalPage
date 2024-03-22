@@ -841,6 +841,16 @@ header {
   color:black;
 }
 
+.contact_info_container:hover a{
+  text-decoration: none;
+  color:blue;
+}
+
+.contact_info_container:hover i {
+  text-decoration: none;
+  color:blue;
+}
+
 footer {
   padding-bottom: 5%;
 }
@@ -1499,6 +1509,15 @@ header {
   cursor: default;
   height:2rem;
   color:black;
+}
+
+.contact_info_container:hover a{
+  text-decoration: none;
+  color:blue;
+}
+.contact_info_container:hover i {
+  text-decoration: none;
+  color:blue;
 }
 
 footer {
@@ -2162,7 +2181,15 @@ footer {
     height:2rem;
     color:black;
   }
-  
+
+  .contact_info_container:hover a{
+    text-decoration: none;
+    color:blue;
+  }
+  .contact_info_container:hover i {
+    text-decoration: none;
+    color:blue;
+  }
   footer {
     padding-bottom: 5%;
   }
@@ -2825,7 +2852,15 @@ footer {
     height:2rem;
     color:black;
   }
-  
+
+  .contact_info_container:hover a{
+    text-decoration: none;
+    color:blue;
+  }
+  .contact_info_container:hover i {
+    text-decoration: none;
+    color:blue;
+  }
   footer {
     padding-bottom: 5%;
   }
