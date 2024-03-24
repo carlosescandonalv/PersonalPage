@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display&family=Molengo&family=Questrial&family=Yanone+Kaffeesatz:wght@400;600&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Helvetica';
+  margin-right:200px;
+  margin-left:200px;
+}
+
+
+
+nav {
+  background-color: white;
+ 
+}
+
+nav ul {
+  list-style-type: none;
+  font-size: 1.5rem;
+  gap: 2.4rem;
+  margin: 0;
+  padding: 0;
+  text-align:center;
+}
+
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color:black;
+  display: inline-block;
+  padding: 0px 20px;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+  scroll-behavior:smooth;
+}
+ 
+
+nav ul li a:hover {
+  color: blue;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: (181,181,181);
+}
+
+/*Header*/
+
+header {
+  margin-top: 10%;
+}
+
+.title h1{
+  text-align: center;
+}
+
+.available_doc_continer{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.document{
+ display: inline-block;
+ margin-left: 20%;
+ color:black;
+}
+
+.document a{
+  text-decoration: none;
+  color:black;
+}
+.document a:hover {
+  color:blue;
+}
+
+.code {
+  display: inline-block;
+  align-items: right;
+  margin-left: auto;
+  float: right;
+  margin-right: 20%;
+}
+
+
+
+
+/*Resumen*/
+
+.summary{
+  margin-top: 5%;
+  font-weight: bold;
+  text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Contact info*/
+.Contact{
+  display:flex;
+  height:80vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.section_text_p1{
+  font-size: 13pt;
+  color:grey;
+}
+
+.contact_title{
+  margin-top:0.1rem;
+  font-size: 30pt;
+  font-weight: bold;
+}
+
+.contact-info-upper-container{
+  display: flex;
+  justify-content: center;
+  border-radius:2rem;
+  border: rgb(53,53,53) 0.1rem solid;
+  border-color: rgb(163,163,163);
+  background: (250,250,250);
+  margin: 2rem auto;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+}
+
+.contact_info_container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:0.5rem;
+  margin: 1rem;
+}
+
+.contact_info_container p{
+  font-size: larger;
+}
+
+.contact_info_container a{
+  text-decoration: none;
+  color:black
+}
+
+.contact_info_container i{
+  cursor: default;
+  height:2rem;
+  color:black;
+}
+
+footer {
+  padding-bottom: 5%;
+}
