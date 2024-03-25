@@ -13,7 +13,7 @@ body {
 
 nav {
   background-color: white;
- 
+  padding-bottom: 2%;
 }
 
 nav ul {
@@ -23,6 +23,7 @@ nav ul {
   margin: 0;
   padding: 0;
   text-align:center;
+  
 }
 
 
@@ -51,28 +52,37 @@ nav ul li a:hover {
 /*Header*/
 
 header {
-  margin-top: 10%;
+  display: flex;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(proy_images/CellTower/background.png);
+  margin-right: -200px;
+  margin-left:-200px
 }
 
 .title h1{
   text-align: center;
+  color: white;
+
 }
 
 .available_doc_continer{
   display: flex;
   justify-content: space-between;
-  
+
 }
 
 .document{
  display: inline-block;
- margin-left: 20%;
- color:black;
+ margin-left: 40%;
+ 
 }
 
 .document a{
   text-decoration: none;
-  color:black;
+  color:white;
 }
 .document a:hover {
   color:blue;
@@ -83,7 +93,8 @@ header {
   align-items: right;
   margin-left: auto;
   float: right;
-  margin-right: 20%;
+  margin-right: 40%;
+  color:white;
 }
 
 p a{
