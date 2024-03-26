@@ -540,6 +540,9 @@ header {
   flex-direction: column;
 }
 
+.proj_details p{
+  text-align: justify;
+}
 .proj_details p:last-child{
   margin-bottom:4vi;
 }

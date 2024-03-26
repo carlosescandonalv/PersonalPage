@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="wine.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="java"></script>
+
+</head>
+<body>
+ <!-- Barra de navegación -->
+    <nav>
+        <ul>
+          <li><a href="../index.html#me">Me</a></li>
+          <li><a href="../index.html#experience">Experience</a></li>
+          <li><a href="../index.html#skills">Skills</a></li>
+          <li><a href="../index.html#education">Education</a></li>
+          <li><a href="../index.html#projects">Projects</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <header>
+        <div class="title">
+          <h1>Wine Customer Analyisis for Ciù Ciù</h1>
+        </div>
+        <div class="avaliable_doc_container">
+          <div class="document"><a href="https://kth.diva-portal.org/smash/record.jsf?pid=diva2%3A1793709&dswid=1808">
+            <i class="fa-solid fa-file"></i>
+            Document</a>
+          </div>
+          <div class="code">
+            <i class="fa-brands fa-github"></i>
+            Not available
+          </div>
+        </div>
+        
+
+
+
+
+
+      </header>
+      <main>
+        <div class="summary">
+          <p>Ciù Cìu, a renowned Italian wine manufacturer tasked us with conducting a 
+            comprehensive customer analysis for forecasting future trends. The project 
+            entails K-Means Clustering and sentiment analysis of social media sites.
+
+           
+          </p>
+          <p>The project aims to understand current customer groups, most liked and disliked
+             wines by brand, country, variety of grapes and tailor a business plan accordingly.
+             The creation of personas and a engaging storytelling to present the data to the company's 
+             board was key to the project's success.
+          </p>
+        </div>
+
+        <section>
+          <div class="section_title">The project</div>
+          <p>One of the industries that are constantly growing and that is more and more dependent on
+            public/online opinion is the wine industry. The rising adoption of wine among all age
+            groups (from the young generation to the old age population) across the globe is the key
+            factor for market growth. Moreover, the COVID-19 pandemic has disrupted global wine
+            distribution. The closure and restrictions on hotels and restaurants changed the purchasing
+            behavior of consumers, that turned to food retailers along with online portals to shop for
+            this type of product</p>
+
+            <img src="proy_images/WineCiuCiu/market size.png" alt="marketsize" id="market">
+          <p>Nowadays, social media gathers a seemingly endless amount of information in every
+            field, that is available to anyone at any time. Although it might seem simple to collect
+            useful data, it is extremely challenging to make use of this wealth of information. </p>
+
+          <p>With this background of studies, the possibility to analyze the sentiment behind wine
+            reviews, as well as the most common topics that are being brought on the internet seemed
+            to be the point where Ciù Ciù Tenimenti Bartolomei should focus all of its attention. </p>
+
+          <p>Following the line of the previous section, intending to help this company strengthen the
+            cooperation among all its wineries to offer the market the highest quality wines from
+            different territories, the <span style= "color:blue">research question </span>chosen for analysis was the following: <span style= "color:rgb(38, 218, 241)">“When
+            people are looking for wine online, what are the research keys that lead them? The brand
+            of the company, the geographical area of wine production, or the grape variety?”.</span></p>
+          
+          <div class="image-container">
+            <img src="proy_images/WineCiuCiu/ciuciu.png" alt="CiuCiu" id="ciuciu">
+            <img src="proy_images/WineCiuCiu/researchquestion.png" alt="ResearchQuestion" id="RQ">
+          </div>
+
+          <p>By answering it and having access to the most searched words related to wine, whether
+            the brand, the city/province, or even grape variety, this analysis will provide insight into
+            public opinion concerning certain aspects of wine and support the decision-making of Ciù
+            Ciù Tenimenti Bartolomei regarding the development of its sales strategy, including
+            decisions regarding its future wine production, while knowing which type of wine to sell
+            and advertise, depending on the target the company has in mind.</p>
+          <p>To be able to have the necessary answers, the first step lay on a sentiment analysis through
+            the <span style="font-weight: bold; color:blue"> Twitter Sentiment Analysis </span>dataset. By splitting the mentioned dataset, it was possible
+            to train and test the model to classify sentiment within tweets as positive, negative,
+            neutral, or irrelevant. </p>
+            
+        </section>
+
+        <section>
+            <div class="section_title">Storytelling</div>
+            <p>The story relies on the reality that each consumer is a whole world with different
+              situations, thinking processes, taste, etc. These contrasts among people make the selling
+              problem much more complicated because, Can you satisfy everyone? The answer is
+              clearly no, but we believe we can get close to that point. How? By segmentation and
+              clustering, dividing our market from top to bottom. For the development of this project,
+              the first assumption is to consider two different types of wine consumers: </p>
+            <ul>
+              <li>Wine – expert: Heavily invested wine consumers, medium or high knowledge
+                about wine and wine related topics. Enjoy quality over quantity and wine-tasting
+                is a primary focus</li>
+              <li> Average consumer: Less trained in wine matter, drinkers but not well informed or
+                connoisseurs of the wine industry. Differentiate less between different different
+                taste, varieties or bottles. Wine buyers for a wide variety of reasons but not winetasting.</li>
+            </ul>
+            <img src="proy_images/WineCiuCiu/marketsegmentation.png" alt="marketseg" id="marketseg">
+            <p>Data collection was done according to the previous assumption. For the expert consumer,
+              270k reviews acquired from Wine Enthusiast Magazine were used. This magazine
+              includes wine reviews from professional sommeliers and wine-tasters, addressing
+              features such as rating, price, description and variety.</p>
+            <p>To approach the average consumer problem, efforts must be pointed somewhere where
+              everybody as access and scrapping of data will be simple to perform - the answer is Social
+              Media platforms, mainly Twitter. Using a twitter scraper tool, the goal will be to analyze
+              what the general public post about wine, country of provenance, grape variety or brands,
+              along with checking potential similarities with the expert criteria. The final objective
+              would be to cluster, in some extent, what are the main preferences of these two big groups
+              of consumers and the thinking process they follow in the acquisition of a bottle of wine.</p>
+          </section>
+          
+          <section>
+            <div class="section_title">Results</div>
+
+
+        <div id="contact" class="Contact">
+          <p class="section_text_p1">Get in Touch</p>
+          <h1 class="contact_title">Contact Me</h1>
+          <div class="contact-info-upper-container">
+            <div class="contact_info_container">
+              <i class="fa-solid fa-envelope fa-2x"></i>
+              <p><a href="mailto:carlosescandonalv@gmail.com">carlosescandonalv@gmail.com</a></p>
+            </div>
+
+            <div class="contact_info_container">
+              <i class="fa-brands fa-linkedin-in fa-2x"></i>
+              <p><a href="https://www.linkedin.com/in/carlosescandonalv">LinkedIn</a></p>
+            </div>
+
+          </div>
+        </div>
+
+
+
+
+      </main>
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul>
+              <li><a href="../index.html#me">Me</a></li>
+              <li><a href="../index.html#experience">Experience</a></li>
+              <li><a href="../index.html#skills">Skills</a></li>
+              <li><a href="../index.html#education">Education</a></li>
+              <li><a href="../index.html#projects">Projects</a></li>
+              <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>   
+      </nav>
+      </footer>
+</body>
+</html>
