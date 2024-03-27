@@ -132,6 +132,20 @@ section{
   display: flex;
 }
 .image-container img {
+  width: 30%; 
+  height: 20%;
+  padding-top: 3%;
+  padding-bottom:3%;
+  margin-left: auto;
+  margin-right:auto;
+}
+.image-container_2{
+  width: 70%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.image-container_2 img {
   width: 50%; 
   height: 20%;
   padding-top: 3%;
@@ -139,7 +153,6 @@ section{
   margin-left: auto;
   margin-right:auto;
 }
-
 .image-container #ciuciu{
   transform: translateY(50%);
   width: 40%;
@@ -147,32 +160,6 @@ section{
 
 
 #market{
-  width:80%;
-  padding-top: 3%;
-  padding-bottom:3%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-
-}
-
-#marketseg{
-  width:100%;
-  padding-top: 3%;
-  padding-bottom:3%;
-  display: block;
-
-}
-
-#mae, #dbm, #model{
-  padding-top: 3%;
-  padding-bottom:3%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#results, #mae_n,#less1km,#opencell{
   width:60%;
   padding-top: 3%;
   padding-bottom:3%;
@@ -181,44 +168,78 @@ section{
   margin-right: auto;
 
 }
-#opencell, #sunrise{
+
+#marketseg {
+  width:100%;
+  padding-top: 3%;
+  padding-bottom:3%;
+  display: block;
+}
+
+#grapevariety_pref{
   width:80%;
   padding-top: 3%;
   padding-bottom:3%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-
 }
-#sunrise{
+
+#wineprice{
   width:60%;
   padding-top: 3%;
   padding-bottom:3%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-
 }
-.text_img_right{
-  display:flex;
-  flex-direction: row;
-}
-
-.text_img_right p{
-  padding-right: 2%;
-}
-
-
-#less1km, #more1km{
-  width:100%;
+#wordcloud{
+  width:50%;
   padding-top: 3%;
   padding-bottom:3%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-
 }
 
+#countryinsights{
+  width:50%;
+  padding-top: 3%;
+  padding-bottom:3%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#personacreation{
+  width:60%;
+  padding-top: 3%;
+  padding-bottom:3%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#grape{
+  width:50%;
+  padding-top: 0;
+  padding-bottom: 2%;
+}
+
+.quote {
+  background-color: lightgray;
+  color:black;
+  font-weight: bold;
+  text-align: center;
+  padding:5%;
+  line-height: 1.4;
+}
+
+
+.prediction{
+  padding:3%;
+  border: orange dashed 2px;
+}
 
 
 
