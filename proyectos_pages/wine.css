@@ -96,6 +96,14 @@ header {
   margin-right: 40%;
   color:white;
 }
+.code a{
+  text-decoration: none;
+  color:white;
+}
+
+.code a:hover{
+  color:blue;
+}
 
 p a{
   text-decoration: none;
