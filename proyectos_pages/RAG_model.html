@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="project_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="java"></script>
+
+</head>
+<body>
+ <!-- Barra de navegación -->
+    <nav>
+        <ul>
+          <li><a href="../index.html#me">Me</a></li>
+          <li><a href="../index.html#experience">Experience</a></li>
+          <li><a href="../index.html#skills">Skills</a></li>
+          <li><a href="../index.html#education">Education</a></li>
+          <li><a href="../index.html#projects">Projects</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <header>
+        <div class="title">
+          <h1>RAG based chatbot for QA on large documents</h1>
+        </div>
+        <div class="avaliable_doc_container">
+          <div class="document"><a href="https://kth.diva-portal.org/smash/record.jsf?pid=diva2%3A1793709&dswid=1808">
+            <i class="fa-solid fa-file"></i>
+            Document</a>
+          </div>
+          <div class="code">
+            <i class="fa-brands fa-github"></i>
+            Not available
+          </div>
+        </div>
+        
+
+
+
+
+
+      </header>
+      <main>
+        <div class="summary">
+          <p>The principal objective of the research was using Machine Learning to forecast base station positions
+            using data from crowdsourced measurements. Several Deep Learning algorithms were studied and tested. 
+            Finally, a Multilayer Perceptron Algorithm that outperformed state-of-the-art location algorithms 
+            accuracy was succesfully implemented. 
+          </p>
+          <p>The study was limited to the country of Switzerland and the data used was from different mobile 
+            service providers that opperate within the country. This project was carried out in collaboration with Ericsson at
+            their headquarters located in <a href="https://g.co/kgs/kJbnFCj">Kista, Stockholm</a>. 
+          </p>
+        </div>
+
+        <section>
+          <div class="section_title">01. Research</div>
+          <p>In this research project, the principal research questions formulated were two:
+            <ul>
+              <li><span style="font-weight:bold">#RQ1</span>: How can neural network-based machine learning models leverage crowdsourced measurements
+                for accurate and reliable cell tower localization?
+              </li>
+              <li><span style="font-weight:bold">#RQ2</span>: Does this method provide better approximations than state-of-the-art localization algorithms
+                and available open-source datasets?
+              </li>
+            </ul>
+          The main objectives constructed out of these questions were the following:</p>
+          <ul>
+            <li>Estimate cell tower locations in mobile infrastructures with Machine Learning
+              through a crowdsourced measurements-based input.</li>
+            <li>Compare the results obtained with open-sourced datasets and traditional location
+            algorithms used in other state-of-the-art documentation.</li> 
+          </ul>
+
+          <p>The cellular infrastructure aims to divide the intended coverage area into units called cells which tesselate with each other.
+            Each cell will be getting service from an individual lower-power base station or BS that will be connected to a 
+            Base Station Controller (BSC) which will control a certain number of cells. Theoretically, a cell will have an hexagons
+            shape to favor tesselation between cells, however in reality is not always like that. The area covered by the cell depend on Several
+            factors, such as user density, conectivity demand, terrain features and population density. </p>
+          
+          <div class="image-container">
+            <img src="proy_images/CellTower/cityinf.png" alt="City infrastructure">
+             <img src="proy_images/CellTower/cell_inf.png" alt="Cell Infrastructure">
+          </div>
+
+          <p>Mobile Operators do not typically disclose the location of their cell towers or other sensitive information about their network
+            infrastructure. Reasons vary: the security of their physical infrastructure would be a priority for providing a reliable service. Another primary
+          concern is competition from the market, the coverage of a certain area is determined by the position of their cell towers, not disclosing this information
+          keeps a competitive advantage over other providers. </p>
+
+          <p>Crowdsourcing measurements involve large datasets of user signal measurements recorded by user equipment in certain areas. 
+            This type has its flaws because user-contributed measurements would be less accurate in some cases than the ones taken with specialized equipment,  in terms of owning less specific signal features.
+            Methods such as Angle of Arrival (AoA), Time of Arrival (ToA) and Time Difference of Arrival (TDoA) can provide a much more accurate location estimation than other methods because of their use of more specific metrics, 
+            but they are impossible to apply in a crowdsourcing environment, as the datasets lack this information, because they cant be recorded by user equipment.
+          </p>
+          <img src="proy_images/CellTower/algorithms.png" alt="Algorithms" id="algorithms">
+          <ul>
+            <li>Centroid: estimates the location of the antenna on the geographical center of all measurements taken.</li>
+            <li>Weighted Centroid: Calculating a centroid by weighting each node differently according to a signal metric, in this case the received signal level.</li>
+            <li>S-RSS: Relies on the assumption that the antenna is located at the point where the cells strongest RSS is recorded. Thus, this method seems simplistic it is effective in highly populated areas. </li>
+          </ul>
+        </section>
+
+        <section>
+          <div class="section_title">02. Data</div>
+          <p>The data used for this project involves three different dataset:
+          <ul>
+            <li>An open source dataset: OpenCell Id database is the most complete open source information available.</li>
+            <li>Ground truth information from a mobile provider: Provided by Ericsson, ground truth data protected under a Non Disclosure Agreement.</li>
+            <li>Crowdsourced measurements: Extracted through a tool used at Ericsson. Two types of signal measurements are selected: Connection Tests (CT) and 
+              Network Information Record (NIR).
+            </li>
+          </ul>
+          The proviver available would be Swisscom and the area of study the country of Switzerland.
+            </p>
+          <div class="image-container">
+            <img src="proy_images/CellTower/opencell_swiss.png" alt="OpenCell Swisscom">
+            <img src="proy_images/CellTower/crowdsourced_mes.png" alt="Crowdsourced Measurements">
+          </div>  
+          <p>Measurement received signal strength ranges across the whole spectrum, being more frequent among the [-110,-90] dbm interval.
+            It is worthy to highlight a final step in the preprocessing where all measurements with a mean average error superior to 30 km
+            As in the background stage it was noted that the maximum size of a cell would be around that radius. 
+          </p>
+          
+          <img src="proy_images/CellTower/dbm_info.png" alt="RSS_hist" id="dbm">
+
+          <p>The received signal strength recorded does not always linearly decrease with an increase in distance to its cell tower.
+            Different factors can affect these measurements, such as obstacles, weather conditions, or interferences.
+          </p>
+
+          <img src="proy_images/CellTower/mae.png" alt="MAE" id="mae">
+        </section>
+
+        <section>
+          <div class="section_title">03. Model</div>
+          <p>After careful consideration, the model chosen for this project is a Multilayer Perceptron Network (MLP).
+            An Artificial Neural Network model capable of extracting complex relationships between features of training data and capable of
+            handling large datasets.</p>
+          <p>This supervised learning algorithm is made of several layers that interconnect the input nodes with the output nodes, it utilizes
+            backpropagation for the training stage of the network. The neurons in each layer are connected to every network in the following layer and data 
+            will flow forward from the input to the output. The main reason behind this appointment is the model's capability of extracting complex relationships 
+            between features in the training data. Furthermore, this type of neural network can handle heavy and complex datasets like the one at hand, making 
+            adjustments to the weights of each neuron progressively in search of error decline, and performance improvement. In this case, the model is configured 
+            for a multioutput regression problem with 5 layers (4 hidden & 1 output), 180 neurons in the first hidden layer and ReLu and Linear as activation functions.
+          </p>
+          <img src="proy_images/CellTower/model_design.png" alt="model_design" id="model">
+          <div class="text_img_right">
+            <div class="text">
+              <p>The model is evaluated under a 5 K-fold cross-validation technique in order to produce averaged performance metrics. The predicted measurements are expressed in 
+                radians, identically to the preprocessing carried in the data before the model simulations.
+              </p>
+              <p>The model presents excellent performance metrics and minimum losses. Small errors in coordinates prediction can lead to MAE differences of hundreds of meters.</p>
+            </div>
+          <img src="proy_images/CellTower/model_performance.png" alt="model_performance" id="model_per">  
+          </div>
+          <p>The model predicts a cell tower's most proable location per recorded signal measurement. However, there is only one possible location per cell identifier.
+            As a means of reducing the significant error discrepancies in certain samples and establishing a unique geographical location for each base station, 
+            a procedure was implemented that computes a centroid alogirthm taken into account all predictions from the same cell tower as anchor nodes. 
+          </p>
+          <div class="image-container">
+            <img src="proy_images/CellTower/error_residuals.png" alt="Error Residuals">
+            <img src="proy_images/CellTower/error_centroid.png" alt="Error Centroid">
+          </div> 
+
+          <p>A <span style="font-weight:bold">significant feature analysis</style></span> to evaluate feature importance of each individul parameter is carried out through a Permutation Feature Importance approach.
+            The metrcis chosen to monitor are the mean squared error(MSE) and mean absolute error (MAE). The analysis reveals that statisic features of Received Signal Level or parameters such as the mean RSCP or Lte Cqi
+            are the most important features to the modeled performance, followed by calculated Weighted Centroid, RSRQ or Standard Centroid.</p>
+          
+          <p>The proposed algorithm surpasses the best of the computed state-of-the-art location algorithms in terms of average predicion error (m) by almost 30%. Outliers greatly affect the average metric error in each algorithm.</p>
+          <img src="proy_images/CellTower/results.png" alt="results" id="results">  
+        </section>
+
+        <section>
+          <div class="section_title">04. Results & Analysis</div>
+          <p>From the results of the model, several analysis could be conducted. For example, that the relationship between the number of recorded measurements and the accuracy of the prediction in terms of MAE is not linear. However, a higher
+          number of measurements makes the estimation less sensitive to outliers. From 13782 cell towers present in the test dataset, 9058 were estimated with a precision error of 1 km or less, and there are 4724 cases where the prediction error 
+          surpasses that range. </p>
+         
+          <img src="proy_images/CellTower/MAE_Nmeasurements.png" alt="MAE_n" id="mae_n">
+          <div class="image-container">
+            <img src="proy_images/CellTower/MAE_less600m.png" alt="mae_600">
+            <img src="proy_images/CellTower/MAE_less20000m.png" alt="mae_2000">
+          </div>
+          <p>Promising scenarios where the estimation is very accurate (less than 1 km), present a wide variety of signal strength samples and proximity to the base station. 
+          </p>
+          <img src="proy_images/CellTower/less1km.png" alt="AccurateScenarios" id="less1km">
+          <p>Defective estimations, that exceed 1 km of MAE generally present poor overall signal strength. Samples recorded close to the cell tower are scarce or non-existent.</p>
+          <img src="proy_images/CellTower/more1km.png" alt="AccurateScenarios" id="more1km">
+          <p>There are certain cases where the error is critical (>8km). This cases share a majority of samples recorded kilometers away from the base station, and samples recorded close to it ar scarce or non-existent. 
+            . Additionally, these environments have a particular trait: a substantial amount of measurements belong to the same geographical point. This clustering alters feature calculation and pollutes the precision of the output.
+          </p>
+          <p> A comparative signal analysis is carried out to back up the premises explained about signal strength influence in Accurate, Defective and Critical Predictions. In the following histograms, it is appreciated how the mean signal strength of each base station has a great effect
+            in the accuracy of the model's estimation.
+          </p>
+          <div class="image-container_2">
+            <img src="proy_images/CellTower/hist1.png" alt="hist1">
+            <img src="proy_images/CellTower/hist2.png" alt="hist2">
+          </div>
+          <p>Comparing it to the open-source datasets discussed at the beginning. Our model exhibits a better approximation in the majority of scenarios.
+          OpenCellId contains a high number of mislabeled samples, more than twice the actual amount of Swisscom towers
+          Focusing on specific scenarios, it can be shown how the mode's predictions exceed the precision of OpenCellId datasets in both rural and urban areas.
+          </p>
+          <img src="proy_images/CellTower/opencell.png" alt="OpenCellComparison" id="opencell">
+          
+
+          <p>For an additional experiment, the model was tested with unseen data from another mobile provider (Sunrise) within the same country. The output was compared to OpenCellId
+            samples, as for there was no ground-truth information available for this specific provider. The results seemed promising: 
+            <ul>
+              <li>The model adapts effectively to this new data and produces coherent predictions within the area of study.</li>
+              <li>It is certain that the number of predicted cell towers is accurate to the number of cell towers present in the crowdsourced dataset.</li>
+            </ul>
+            <img src="proy_images/CellTower/sunrise.png" alt="SunriseComparison" id="sunrise">
+          </p>
+
+          <section>
+            <div class="section_title">05. Conclusions</div>
+
+            <p>In order to answer <span style="font-weight:bold">Research Question 1</span>, the following conclusions were laid.</p> 
+            <ul>
+              <li>MLP exhibits great adaptability to the cell localization problem, using crowdsourced measurement inputs. 
+              </li>
+              <li>Neural Networks demonstrate great adaptability in handling large datasets.
+              </li>
+              <li>Performance metrics obtained are excellent, however, the prediction accuracy must be as close as possible to obtain minimum metric errors.
+              </li>
+              <li>Data preprocessing is crucial to sharpen the model's prediction capability.
+              </li>
+              <li>Measurements’ diversity plus data volume and quality will also influence the output obtained.
+              </li>
+            </ul>
+            <p>For <span style="font-weight:bold">Research Question 2</span> the results suggest:</p>
+            <ul>
+              <li>The proposed model outperforms state of the art localization algorithm in the present dataset in terms of mean average error. 
+              </li>
+              <li>The model provides a better approximation than the open-source dataset in most cases, counting with the amount of mislabeled cell towers present in open-source initiatives.
+              </li>
+              <li> The training of this model allows for scalability to data from other service providers in the same country.
+              </li>
+              <li>However, struggles to translate geographical coordinates to countries in faraway locations. 
+              </li>
+            </ul>
+          </section>
+        </section>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+        <div id="contact" class="Contact">
+          <p class="section_text_p1">Get in Touch</p>
+          <h1 class="contact_title">Contact Me</h1>
+          <div class="contact-info-upper-container">
+            <div class="contact_info_container">
+              <i class="fa-solid fa-envelope fa-2x"></i>
+              <p><a href="mailto:carlosescandonalv@gmail.com">carlosescandonalv@gmail.com</a></p>
+            </div>
+
+            <div class="contact_info_container">
+              <i class="fa-brands fa-linkedin-in fa-2x"></i>
+              <p><a href="https://www.linkedin.com/in/carlosescandonalv">LinkedIn</a></p>
+            </div>
+
+          </div>
+        </div>
+
+
+
+
+      </main>
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul>
+              <li><a href="../index.html#me">Me</a></li>
+              <li><a href="../index.html#experience">Experience</a></li>
+              <li><a href="../index.html#skills">Skills</a></li>
+              <li><a href="../index.html#education">Education</a></li>
+              <li><a href="../index.html#projects">Projects</a></li>
+              <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>   
+      </nav>
+      </footer>
+</body>
+</html>
